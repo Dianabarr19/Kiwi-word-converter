@@ -10,7 +10,6 @@ function App() {
   const numberInput = useRef(null);
 
   const handleSubmit = async (e) => {
-    console.log(data);
     e.preventDefault();
     const response = await fetch("/api", {
       method: "POST",
@@ -26,7 +25,6 @@ function App() {
   const handleClick = (e) => {
     let numberValue = e.currentTarget.dataset.number;
     let totalValue = (numberInput.current.value += numberValue);
-    console.log(totalValue, numberValue);
     setData(totalValue);
   };
   return (
