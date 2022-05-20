@@ -7,7 +7,20 @@ import Button from "@mui/material/Button";
 function App() {
   const [data, setData] = useState("");
   const [res, setRes] = useState("");
+  const [words, setWords] = useState([]);
   const numberInput = useRef(null);
+  const getWords = async (letters) => {
+    let list = [];
+    for (let i = 0; i < letters.length; i++) {
+      await fetch(`https://api.datamuse.com/sug?s=${letters[i]}&max=1`)
+        .then((res) => res.json())
+        .then((res) => {
+          list.push(res[0]["word"]);
+        });
+    }
+
+    return list;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +33,13 @@ function App() {
     });
     const body = await response.text();
     setRes(body);
+    const words = await getWords(body.split(" "));
+    setWords(words.join(", "));
+  };
+
+  const reset = () => {
+    numberInput.current.value = "";
+    setData(numberInput.current.value);
   };
 
   const handleClick = (e) => {
@@ -55,10 +75,22 @@ function App() {
             <Button type="submit" variant="outlined">
               Get Combinations
             </Button>
+            <div>
+              <Button
+                type="text"
+                color="error"
+                variant="outlined"
+                onClick={reset}
+              >
+                Clear
+              </Button>
+            </div>
           </div>
         </form>
       </div>
       <h2>{res}</h2>
+
+      <div>{words.length > 1 && <h3>Recommended words: {words}</h3>}</div>
     </div>
   );
 }
