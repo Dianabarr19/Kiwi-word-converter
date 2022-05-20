@@ -23,4 +23,7 @@ The backend is coded in NodeJS, using express; and the frontend is coded with Re
 <h2> How to use it? </h2>
 <br>
 All numbers (besides 1 and 0) are clickable. you can use this buttons or simply type them with your keyboard in the 'transparent' input bar. 
-<img width="438" alt="Screen Shot 2022-05-20 at 8 57 57 PM" src="https://user-images.githubusercontent.com/90432547/169596779-a7356d1a-0922-461d-afe7-5223b70db3bf.png">
+
+
+https://user-images.githubusercontent.com/90432547/169597455-1b45a3ad-2227-482b-91c3-3d3eaa10f613.mov
+
