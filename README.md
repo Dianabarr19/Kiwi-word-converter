@@ -22,7 +22,14 @@ The backend is coded in NodeJS, using express; and the frontend is coded with Re
 
 <h2> How to use it? </h2>
 <br>
-All numbers (besides 1 and 0) are clickable. you can use this buttons or simply type them with your keyboard in the 'transparent' input bar. 
+All numbers (besides 1 and 0) are clickable. you can use this buttons or syou can just imply use your keyboard in the 'transparent' input bar and click on the 'Get Combinations' button. 
+<br>
+As a result word converter will return:
+<ul>
+  <li> First a combination of letters involving the numbers selected. </li>
+  <li> And below this, using an API the app will return a suggestion of words (1 per) per combination of letters </li>
+</ul>
+<br>
 
 
 https://user-images.githubusercontent.com/90432547/169597455-1b45a3ad-2227-482b-91c3-3d3eaa10f613.mov
