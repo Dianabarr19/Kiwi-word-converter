@@ -35,3 +35,6 @@ Here is a small video so you have a brief idea of how word converter works ðŸ¤“ð
 
 https://user-images.githubusercontent.com/90432547/169597455-1b45a3ad-2227-482b-91c3-3d3eaa10f613.mov
 
+<h2> Final Thoughts:</h2>
+<br>
+Doing word converter was definitely a challenge, I had to learn NodeJS to code the backend, and even though I have some knowledge of ReacJS, I had to do a lot of research in order to achive what I was looking for. I worked on this project for over a week and I am happy and satisfied with the final result, and I definitely learned a lot in the process of creating word converter. Still, there are some aspects I would like to polish, but I had to meet a deadline, so hopefully I can work after in these aspects: such as improving the front end, specially the part of how the results/combinations and recommended words look. Also, The code needs some refactoring, so in a near future (with some luck) when I have more coding knowledge I can polish this app. 
