@@ -30,7 +30,8 @@ As a result word converter will return:
   <li> And below this, using an API the app will return a suggestion of words (1 per) per combination of letters </li>
 </ul>
 <br>
-
+Here is a small video so you have a brief idea of how word converter works 🤓👇
+<br>
 
 https://user-images.githubusercontent.com/90432547/169597455-1b45a3ad-2227-482b-91c3-3d3eaa10f613.mov
 
