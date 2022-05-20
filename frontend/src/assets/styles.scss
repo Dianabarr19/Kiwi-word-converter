@@ -1,16 +1,53 @@
+body {
+  background-color: #f3f1f5;
+}
 .dial-grid {
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 30%;
+  max-width: 285px;
+  min-width: 285px;
+
   .dial-number {
-    border: 1px solid lightblue;
+    border: 1px solid #e6e6e6;
     border-radius: 50%;
     padding: 16px 8px;
     margin: 8px;
-    p,
+    background-color: #e6e6e6;
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
     h3 {
+      font-size: 25px;
       margin: 0;
     }
+  }
+}
+
+h2 {
+  // margin-top: 1.5rem;
+  padding: 8px 120px;
+  color: #212121;
+}
+.input {
+  border: transparent;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #212121;
+}
+
+.start-mssg {
+  h3 {
+    margin-top: -20px;
+    color: #212121;
+  }
+  h1 {
+    color: #172774;
   }
 }

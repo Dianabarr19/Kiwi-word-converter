@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 import Dial from "./components/dial";
 import "./assets/styles.scss";
@@ -7,6 +7,8 @@ import Button from "@mui/material/Button";
 function App() {
   const [data, setData] = useState("");
   const [res, setRes] = useState("");
+  const numberInput = useRef(null);
+
   const handleSubmit = async (e) => {
     console.log(data);
     e.preventDefault();
@@ -22,20 +24,28 @@ function App() {
   };
 
   const handleClick = (e) => {
-    console.log(e.target);
+    let numberValue = e.currentTarget.dataset.number;
+    let totalValue = (numberInput.current.value += numberValue);
+    console.log(totalValue, numberValue);
+    setData(totalValue);
   };
   return (
     <div className="App">
+      <div className="start-mssg">
+        <h1>Welcome to word converter</h1>
+        <h3>To start please insert a number 👇</h3>
+      </div>
+      <input className="input" type="text" ref={numberInput} />
       <div className="dial-grid">
         <Dial number="1" letters="" />
         <Dial number="2" letters="a b c" onClick={handleClick} />
-        <Dial number="3" letters="d e f" />
-        <Dial number="4" letters="g h i" />
-        <Dial number="5" letters="j k l" />
-        <Dial number="6" letters="m n o" />
-        <Dial number="7" letters="p q r s" />
-        <Dial number="8" letters="t u v" />
-        <Dial number="9" letters="w x y z" />
+        <Dial number="3" letters="d e f" onClick={handleClick} />
+        <Dial number="4" letters="g h i" onClick={handleClick} />
+        <Dial number="5" letters="j k l" onClick={handleClick} />
+        <Dial number="6" letters="m n o" onClick={handleClick} />
+        <Dial number="7" letters="p q r s" onClick={handleClick} />
+        <Dial number="8" letters="t u v" onClick={handleClick} />
+        <Dial number="9" letters="w x y z" onClick={handleClick} />
         <div></div>
         <Dial number="0" letters="+" />
         <div></div>
@@ -43,15 +53,14 @@ function App() {
 
       <div>
         <form onSubmit={handleSubmit}>
-          <input type="text" onChange={(e) => setData(e.target.value)} />
           <div>
             <Button type="submit" variant="outlined">
-              Combinations
+              Get Combinations
             </Button>
           </div>
         </form>
       </div>
-      <h1>{res}</h1>
+      <h2>{res}</h2>
     </div>
   );
 }
