@@ -6,7 +6,7 @@ Word converter is able to transform numbers into a combination of words; using a
 For example: ‘23’ user input will have as an output: <strong> ad, ae, af, bd, be, bf, cd, ce, cf.</strong>
 <br>
 As 0 and 1 does not have any values (letters) if the user inserts these numbers it will just ignore them (return an empty string).
-
+<br>
 The backend is coded in NodeJS, using express; and the frontend is coded with ReactJS and Sass.
 <br>
 
@@ -19,3 +19,8 @@ The backend is coded in NodeJS, using express; and the frontend is coded with Re
   <li> Then npm is installed in server and frontend folders; in server folder type <strong>npm run dev</strong> in the terminal</li>
   <li> And finally, the server should open world converter in local host: <strong>http://localhost:3000</strong></li>
 </ul>
+
+<h2> How to use it? </h2>
+<br>
+All numbers (besides 1 and 0) are clickable. you can use this buttons or simply type them with your keyboard in the 'transparent' input bar. 
+<img width="438" alt="Screen Shot 2022-05-20 at 8 57 57 PM" src="https://user-images.githubusercontent.com/90432547/169596779-a7356d1a-0922-461d-afe7-5223b70db3bf.png">
