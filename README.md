@@ -22,7 +22,7 @@ The backend is coded in NodeJS, using express; and the frontend is coded with Re
 
 <h2> How to use it? </h2>
 <br>
-All numbers (besides 1 and 0) are clickable. you can use this buttons or syou can just imply use your keyboard in the 'transparent' input bar and click on the 'Get Combinations' button. 
+All numbers (besides 1 and 0) are clickable. you can use this buttons or you can just simply use your keyboard in the 'transparent' input bar (right above the numbers) and click on the 'Get Combinations' button. 
 <br>
 As a result word converter will return:
 <ul>
