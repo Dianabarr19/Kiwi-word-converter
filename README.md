@@ -16,7 +16,7 @@ The backend is coded in NodeJS, using express; and the frontend is coded with Re
   <li> To use word converter locally, first you have to clone it to your computer.</li> 
   <li> After, you need to open the file and inside the <strong>frontend</strong> folder, type <strong> npm install </strong> in the terminal</li>
   <li> Wait until it is installed, move to <strong>server</strong> folder and once again type: <strong> npm install</strong>. </li>
-  <li> Then npm is installed in server and frontend folders; in server folder type <strong>npm run dev</strong> in the terminal</li>
+  <li> Whenever npm is installed in server and frontend folders; in <strong>server folder</strong> type <strong>npm run dev</strong> in the terminal</li>
   <li> And finally, the server should open world converter in local host: <strong>http://localhost:3000</strong></li>
 </ul>
 
